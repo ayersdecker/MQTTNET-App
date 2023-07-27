@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MQTTApp.MainPage"
+             Shell.NavBarIsVisible="False">
+
+    <ScrollView>
+        <Grid BackgroundColor="#666">
+            <Grid.RowDefinitions>
+                <RowDefinition/>
+                <RowDefinition Height="100"/>
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition/>
+                <ColumnDefinition Width="100"/>
+            </Grid.ColumnDefinitions>
+            <Label x:Name="ServerLabel" Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="2"/>
+            <Entry x:Name="ClientEntry" Grid.Row="1" Grid.Column="0" BackgroundColor="#555"/>
+            <Button x:Name="ClientButton" 
+                    Text="Submit"
+                    TextColor="White"
+                    BackgroundColor="#444"
+                    Grid.Row="1" 
+                    Grid.Column="1"
+                    Clicked="Button_Clicked"/>
+        </Grid>
+    </ScrollView>
+
+</ContentPage>
